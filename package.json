@@ -1,0 +1,45 @@
+{
+  "name": "SYSUAppleClub2016-font-end",
+  "version": "0.0.0",
+  "description": "SYSUAppleClub2016-font-end",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "browser-sync-spa": "^1.0.3",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-filter": "^3.0.1",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-loopback-sdk-angular": "^0.1.4",
+    "gulp-main-bower-files": "^1.5.3",
+    "gulp-modify-css-urls": "^0.2.2",
+    "gulp-print": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-replace": "^0.4.3",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.1.0",
+    "gulp-util": "^3.0.7",
+    "lazypipe": "^1.0.1",
+    "merge-stream": "^1.0.0",
+    "wiredep": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tidyzq/SYSUAppleClub2016-font-end"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gulp-livescript": "^3.0.1",
+    "livescript": "^1.5.0"
+  }
+}

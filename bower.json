@@ -1,0 +1,36 @@
+{
+  "name": "SYSUAppleClub2016-font-end",
+  "description": "SYSUAppleClub2016-font-end",
+  "main": "",
+  "authors": [
+    "Tidyzq <tidyzq@tidyzq.com>"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "flat-ui": "^2.3.0",
+    "bootstrap": "^3.3.7"
+  },
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "overrides": {
+    "flat-ui": {
+      "dependencies": {
+        "bootstrap": "~3.2.0",
+        "videojs": "~4.7.2"
+      }
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}
