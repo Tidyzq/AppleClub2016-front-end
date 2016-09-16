@@ -1,0 +1,27 @@
+extends templates/index.jade
+
+block body
+  nav#navbar.navbar.navbar-default.navbar-fixed-top
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-collapse', aria-expanded='false')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand
+          span.apple
+          span.brand-text.color1 S
+          span.brand-text.color2 Y
+          span.brand-text.color3 S
+          span.brand-text.color4 U
+          span.brand-text.color5 APPLE
+          span.brand-text.color6 CLUB
+      #navbar-collapse.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='/').navbar-item Rigister
+  #main-content.container
+    #success-page
+      h3.hello.color5 Hello new member.
+      h3.input.color5 |

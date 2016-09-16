@@ -1,8 +1,291 @@
-.main-content {
-  margin-top: 55px,
-  max-width: 786px
+@font-face {
+  font-family: SF-UI;
+  font-weight: 200;
+  src: url("../fonts/SF-UI-Text-Ultrathin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: 200;
+  font-style: italic;
+  src: url("../fonts/SF-UI-Text-UltrathinItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: 300;
+  src: url("../fonts/SF-UI-Text-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/SF-UI-Text-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: normal;
+  src: url("../fonts/SF-UI-Text-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/SF-UI-Text-RegularItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: 500;
+  src: url("../fonts/SF-UI-Text-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: 500;
+  font-style: italic;
+  src: url("../fonts/SF-UI-Text-MediumItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: 600;
+  src: url("../fonts/SF-UI-Text-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: 600;
+  font-style: italic;
+  src: url("../fonts/SF-UI-Text-SemiboldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: bold;
+  src: url("../fonts/SF-UI-Text-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/SF-UI-Text-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: 900;
+  src: url("../fonts/SF-UI-Text-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SF-UI;
+  font-weight: 900;
+  font-style: italic;
+  src: url("../fonts/SF-UI-Text-HeavyItalic.otf") format("opentype");
+}
+
+* {
+  font-family: SF-UI;
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  background-color: #292B37;
+}
+
+#navbar {
+  background-color: #292B37;
+  border-bottom: 1px solid #3A3E4F;
+  .brand-text {
+    font-weight: 300;
+    margin-left: 6px;
+  }
+  .navbar-item {
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    color: white;
+    &:hover {
+      @extend .color5;
+    }
+  }
+}
+
+#main-content {
+  margin-top: 65px;
+  max-width: 786px;
+}
+
+.color0 {
+  color: #FFFFFF;
+}
+
+.border-color0 {
+  border-color: #FFFFFF !important;
+}
+
+.color1 {
+  color: #95C76F;
+}
+
+.border-color1 {
+  border-color: #95C76F !important;
+}
+
+.color2 {
+  color: #B73999;
+}
+
+.border-color2 {
+  border-color: #B73999 !important;
+}
+
+.color3 {
+  color: #D28E5D;
+}
+
+.border-color3 {
+  border-color: #D28E5D !important;
+}
+
+.color4 {
+  color: #DC3C3C;
+}
+
+.border-color4 {
+  border-color: #DC3C3C !important;
+}
+
+.color5 {
+  color: #00ABA5;
+}
+
+.border-color5 {
+  border-color: #00ABA5 !important;
+}
+
+.color6 {
+  color: #8683BA;
+}
+
+.border-color6 {
+  border-color: #8683BA !important;
 }
 
 .select2-container {
-  padding: 0
+  padding: 0;
+  // width: inherit !important;
+}
+
+.select-apple {
+  .select2-chosen {
+    color: white;
+  }
+  .select2-arrow {
+    border-color: #bdc3c7 transparent;
+  }
+}
+
+.select2-drop .select2-highlighted > .select2-result-label {
+  background-color: #08c;
+}
+
+.brand {
+  color: black;
+  font-weight: 300;
+  margin: 60px 0;
+}
+
+.apple {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/apple.png');
+  background-repeat: no-repeat;
+  background-size: 21px 25px;
+  background-position: center center;
+}
+
+@mixin placeholder($color, $font-weight) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-weight: $font-weight;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $color;
+    font-weight: $font-weight;
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: $color;
+    font-weight: $font-weight;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    font-weight: $font-weight;
+  }
+}
+
+.control-label {
+  color: white;
+  font-weight: 200;
+}
+
+.form-control {
+  border-width: 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid white;
+  @include placeholder(
+    $color: #787878,
+    $font-weight: 300
+  );
+}
+
+.form-control:focus {
+  border-color: #08c;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+@keyframes type{
+  0%{width: 0;}
+  40%{width: 0;}
+  100%{width: 100;}
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+#success-page {
+  .hello {
+    font-weight: 300;
+    width: 356px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 2s steps(20, end);
+    -moz-animation: type 2s steps(20, end);
+    -ms-animation: type 2s steps(20, end);
+    animation: type 2s steps(20, end);
+    float: left;
+  }
+  .input {
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -ms-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+    float: left;
+  }
 }
